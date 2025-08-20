@@ -45,7 +45,9 @@ shared_values = {
     "contract_name": "SC-2025-000005",
     "amount": "£50000",
     "weight": "500.60MT",
-    "BL": "232456446"
+    "BL": "232456446",
+    "Buyer": "EVONITH VALUE STEEL LIMITED",
+    "Address": "BHUGAON LINK ROAD, WARDHA-442001, MAHARASHTRA, INDIA"
 }
 
 # Your templates and outputs
