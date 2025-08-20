@@ -55,12 +55,14 @@ with st.form("input_form"):
 
 if submitted and uploaded_files:
     shared_values = {
-        "Date": date,
-        "invoice_no": invoice_no,
-        "contract_name": contract_name,
-        "amount": amount,
-        "weight": weight,
-        "BL": bl
+    "Date": "August 4, 2025",
+    "invoice_no": "C1-2025-000006",
+    "contract_name": "SC-2025-000005",
+    "amount": "£50000",
+    "weight": "500.60MT",
+    "BL": "232456446",
+    "Buyer": "EVONITH VALUE STEEL LIMITED",
+    "Address": "BHUGAON LINK ROAD, WARDHA-442001, MAHARASHTRA, INDIA"
     }
 
     zip_buffer = io.BytesIO()
@@ -84,4 +86,5 @@ if submitted and uploaded_files:
     )
 
 elif submitted:
+
     st.warning("⚠️ Please upload at least one template file.")
