@@ -50,6 +50,8 @@ with st.form("input_form"):
     weight = st.text_input("Weight", "500.60MT")
     bl = st.text_input("BL Number", "232456446")
     date = st.text_input("Date", datetime.today().strftime("%B %d, %Y"))
+    Buyer = st.text_input("Buyer", "EVONITH VALUE STEEL LIMITED")
+    Address = st.text_input("Address", "BHUGAON LINK ROAD, WARDHA-442001, MAHARASHTRA, INDIA") 
 
     submitted = st.form_submit_button("Generate Contracts")
 
@@ -88,3 +90,4 @@ if submitted and uploaded_files:
 elif submitted:
 
     st.warning("⚠️ Please upload at least one template file.")
+
