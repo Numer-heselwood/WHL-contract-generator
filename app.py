@@ -51,7 +51,9 @@ with st.form("input_form"):
     bl = st.text_input("BL Number", "232456446")
     date = st.text_input("Date", datetime.today().strftime("%B %d, %Y"))
     Buyer = st.text_input("Buyer", "EVONITH VALUE STEEL LIMITED")
-    Address = st.text_input("Address", "BHUGAON LINK ROAD, WARDHA-442001, MAHARASHTRA, INDIA") 
+    Address = st.text_input("Address", "BHUGAON LINK ROAD, WARDHA-442001, MAHARASHTRA, INDIA")
+    IEC CODE = st.text_input("IEC CODE", "099999999")
+    Email = st.text_input("Email-id", "nums.khan@gmail.com")
 
     submitted = st.form_submit_button("Generate Contracts")
 
@@ -64,7 +66,9 @@ if submitted and uploaded_files:
     "weight": "500.60MT",
     "BL": "232456446",
     "Buyer": "EVONITH VALUE STEEL LIMITED",
-    "Address": "BHUGAON LINK ROAD, WARDHA-442001, MAHARASHTRA, INDIA"
+    "Address": "BHUGAON LINK ROAD, WARDHA-442001, MAHARASHTRA, INDIA",
+    "IEC CODE": "099999999",
+    "Email-id": "nums.khan@gmail.com"
     }
 
     zip_buffer = io.BytesIO()
@@ -90,4 +94,5 @@ if submitted and uploaded_files:
 elif submitted:
 
     st.warning("⚠️ Please upload at least one template file.")
+
 
