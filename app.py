@@ -59,16 +59,17 @@ with st.form("input_form"):
 
 if submitted and uploaded_files:
     shared_values = {
-    "Date": "",
-    "invoice_no": "",
-    "contract_name": "",
-    "amount": "",
-    "weight": "",
-    "BL": "",
-    "Buyer": "",
-    "Address": "",
-    "IEC": "",
-    "Email-id": ""
+    "Date": date,
+    "invoice_no": invoice_no,
+    "contract_name": contract_name,
+    "amount": amount,
+    "weight": weight,
+    "BL": bl,
+    "Buyer": Buyer,
+    "Address": Address,
+    "IEC": IEC,
+    "Email-id": Email
+
     }
 
     zip_buffer = io.BytesIO()
@@ -94,6 +95,7 @@ if submitted and uploaded_files:
 elif submitted:
 
     st.warning("⚠️ Please upload at least one template file.")
+
 
 
 
