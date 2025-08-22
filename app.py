@@ -67,7 +67,7 @@ if submitted and uploaded_files:
     "BL": "232456446",
     "Buyer": "EVONITH VALUE STEEL LIMITED",
     "Address": "BHUGAON LINK ROAD, WARDHA-442001, MAHARASHTRA, INDIA",
-    "IEC CODE": "099999999",
+    "IEC": "099999999",
     "Email-id": "nums.khan@gmail.com"
     }
 
@@ -94,6 +94,7 @@ if submitted and uploaded_files:
 elif submitted:
 
     st.warning("⚠️ Please upload at least one template file.")
+
 
 
 
