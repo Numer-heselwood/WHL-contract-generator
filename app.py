@@ -52,7 +52,7 @@ with st.form("input_form"):
     date = st.text_input("Date", datetime.today().strftime("%B %d, %Y"))
     Buyer = st.text_input("Buyer", "EVONITH VALUE STEEL LIMITED")
     Address = st.text_input("Address", "BHUGAON LINK ROAD, WARDHA-442001, MAHARASHTRA, INDIA")
-    IEC_CODE = st.text_input("IEC CODE", "099999999")
+    IEC = st.text_input("IEC CODE", "099999999")
     Email = st.text_input("Email-id", "nums.khan@gmail.com")
 
     submitted = st.form_submit_button("Generate Contracts")
@@ -94,6 +94,7 @@ if submitted and uploaded_files:
 elif submitted:
 
     st.warning("⚠️ Please upload at least one template file.")
+
 
 
 
