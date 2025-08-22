@@ -44,31 +44,31 @@ uploaded_files = st.file_uploader("Upload templates (.docx)", type="docx", accep
 with st.form("input_form"):
     st.subheader("📝 Fill in shared placeholder values")
 
-    contract_name = st.text_input("Contract Name", "SC-2025-000005")
-    invoice_no = st.text_input("Invoice No", "C1-2025-000006")
-    amount = st.text_input("Amount", "£50000")
-    weight = st.text_input("Weight", "500.60MT")
-    bl = st.text_input("BL Number", "232456446")
+    contract_name = st.text_input("Contract Name", "")
+    invoice_no = st.text_input("Invoice No", "")
+    amount = st.text_input("Amount", "")
+    weight = st.text_input("Weight", "")
+    bl = st.text_input("BL Number", "")
     date = st.text_input("Date", datetime.today().strftime("%B %d, %Y"))
-    Buyer = st.text_input("Buyer", "EVONITH VALUE STEEL LIMITED")
-    Address = st.text_input("Address", "BHUGAON LINK ROAD, WARDHA-442001, MAHARASHTRA, INDIA")
-    IEC = st.text_input("IEC CODE", "099999999")
-    Email = st.text_input("Email-id", "nums.khan@gmail.com")
+    Buyer = st.text_input("Buyer", "")
+    Address = st.text_input("Address", "")
+    IEC = st.text_input("IEC CODE", "")
+    Email = st.text_input("Email-id", "")
 
     submitted = st.form_submit_button("Generate Contracts")
 
 if submitted and uploaded_files:
     shared_values = {
-    "Date": "August 4, 2025",
-    "invoice_no": "C1-2025-000006",
-    "contract_name": "SC-2025-000005",
-    "amount": "£50000",
-    "weight": "500.60MT",
-    "BL": "232456446",
-    "Buyer": "EVONITH VALUE STEEL LIMITED",
-    "Address": "BHUGAON LINK ROAD, WARDHA-442001, MAHARASHTRA, INDIA",
-    "IEC": "099999999",
-    "Email-id": "nums.khan@gmail.com"
+    "Date": "",
+    "invoice_no": "",
+    "contract_name": "",
+    "amount": "",
+    "weight": "",
+    "BL": "",
+    "Buyer": "",
+    "Address": "",
+    "IEC": "",
+    "Email-id": ""
     }
 
     zip_buffer = io.BytesIO()
@@ -94,6 +94,7 @@ if submitted and uploaded_files:
 elif submitted:
 
     st.warning("⚠️ Please upload at least one template file.")
+
 
 
 
